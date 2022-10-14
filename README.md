@@ -25,7 +25,7 @@ make install
 
 ```bash
 python3 -m venv <name of the created environment>
-source source <name of the created environment>/bin/activate
+source  <name of the created environment>/bin/activate
 ```
 
 
