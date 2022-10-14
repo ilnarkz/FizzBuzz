@@ -27,9 +27,9 @@ jobs:
           make lint
           make test
       - name: Test & publish code coverage
-          uses: paambaati/codeclimate-action@v2.7.5
-          env:
-            CC_TEST_REPORTER_ID: a8ee23e531a6869479c0820b82c57267bd43866194299369e21cfcd2a5a393d8
-          with:
-            coverageCommand: make test-coverage
-            debug: true
+        uses: paambaati/codeclimate-action@v2.7.5
+        env:
+          CC_TEST_REPORTER_ID: a8ee23e531a6869479c0820b82c57267bd43866194299369e21cfcd2a5a393d8
+        with:
+          coverageCommand: make test-coverage
+          debug: true
