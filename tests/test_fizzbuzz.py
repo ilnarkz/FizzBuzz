@@ -11,7 +11,7 @@ from fizz_buzz.scripts.fizz_buzz import run
 
 def test_fizzbuzz(capsys):
     with patch("builtins.input") as input_mock:
-        input_mock.side_effect = ['10', '11', '12', '15', 'W', '/', 'q']
+        input_mock.side_effect = ['10', '11', '12', '15', 'W', '/', '', 'q']
         run()
         out, err = capsys.readouterr()
         sys.stdout.write(out)
@@ -25,3 +25,5 @@ def test_fizzbuzz(capsys):
         assert out[6] == 'FizzBuzz!'
         assert out[7] == 'Please, input the number!'
         assert out[8] == 'Please, input the number!'
+        assert out[9] == 'Please, input the number!'
+
