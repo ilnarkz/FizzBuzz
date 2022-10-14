@@ -16,14 +16,11 @@ def test_fizzbuzz(capsys):
         out, err = capsys.readouterr()
         sys.stdout.write(out)
         out = out.split('\n')
-        assert 'Welcome to Fizz Buzz!' in out
-        assert 'Submit a number and get an answer!' in out
-        assert 'If you want to exit, press "q".' in out
-        assert out[3] == 'Buzz!'
-        assert out[4] == '11'
-        assert out[5] == 'Fizz!'
-        assert out[6] == 'FizzBuzz!'
-        assert out[7] == 'Please, input the number!'
-        assert out[8] == 'Please, input the number!'
-        assert out[9] == 'Please, input the number!'
+        assert out[0] == 'Buzz!'
+        assert out[1] == '11'
+        assert out[2] == 'Fizz!'
+        assert out[3] == 'FizzBuzz!'
+        assert out[4] == 'Please, input the number!'
+        assert out[5] == 'Please, input the number!'
+        assert out[6] == 'Please, input the number!'
 
