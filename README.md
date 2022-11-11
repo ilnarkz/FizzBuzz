@@ -2,9 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0ae19d477a89c7631e92/maintainability)](https://codeclimate.com/github/ilnarkz/FizzBuzz/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/0ae19d477a89c7631e92/test_coverage)](https://codeclimate.com/github/ilnarkz/FizzBuzz/test_coverage) [![fizz_buzz](https://github.com/ilnarkz/FizzBuzz/actions/workflows/ci.yml/badge.svg)](https://github.com/ilnarkz/FizzBuzz/actions/workflows/ci.yml)
 
-FizzBuzz is a popular task given at job interviews. It displays numbers from 1 to 100. The program outputs the word
-"Fizz" instead of numbers divisible by three, and the word "Buzz" instead of numbers divisible by five. If the number
-is a multiple of both 3 and 5, the program prints the word "FizzBuzz".
+FizzBuzz is a console utility that, when started, asks the user for a number and gives the answer - Fizz, Buzz, FizzBuzz.
 
 ## 1. Installation
 
