@@ -1,11 +1,5 @@
 import sys
-import threading
-
-from unittest import TestCase
 from unittest.mock import patch
-
-import pytest
-
 from fizz_buzz.scripts.fizz_buzz import run
 
 
@@ -23,4 +17,3 @@ def test_fizzbuzz(capsys):
         assert out[4] == 'Please, input the number!'
         assert out[5] == 'Please, input the number!'
         assert out[6] == 'Please, input the number!'
-
