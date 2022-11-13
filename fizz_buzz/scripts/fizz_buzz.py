@@ -1,3 +1,14 @@
+def print_value(number):
+    if number % 3 == 0 and number % 5 == 0:
+        print('FizzBuzz!')
+    elif number % 3 == 0:
+        print('Fizz!')
+    elif number % 5 == 0:
+        print('Buzz!')
+    else:
+        print(number)
+
+
 def run():
     while True:
         char = input('Number: ')
@@ -7,11 +18,4 @@ def run():
             print('Please, input the number!')
             continue
         number = int(char)
-        if number % 3 == 0 and number % 5 == 0:
-            print('FizzBuzz!')
-        elif number % 3 == 0:
-            print('Fizz!')
-        elif number % 5 == 0:
-            print('Buzz!')
-        else:
-            print(number)
+        print_value(number)
